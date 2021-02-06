@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Document</title>
+  <style>
+    p{
+  position: relative;
+}
+  </style>
+</head>
+<body>
+  <input id="but" type="button" value="Нажми" />
+<p>Анимация</p>
+  <script>
+$("#but").click(function() {
+  $("p").animate({
+    fontSize: "4em"
+  }, 1500);	
+  $("p").animate({
+    top: 250
+  }, 300);
+  $("p").animate({
+    fontSize: "1em"
+  }, 2000);
+  $("p").animate({
+    left: 350
+  }, 2000);
+  $("p").animate({
+    right: 1000
+  }, 1000);
+  $("p").animate({
+    fontSize: "3em"
+  }, 2000);
+  $("p").animate({
+    top: 0,
+    left: 0
+  }, 1000);
+});
+  </script>
+</body>
+</html>
